@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
 
@@ -63,8 +65,11 @@ const Footer = () => {
         <p>email</p>
       </ul>
         
-        <div>
-
+        <div className='flex space-x-3 mt-2'>
+         <FaInstagram />
+         <FaXTwitter />
+         <FaFacebook/>
+         <FaLinkedin/>
         </div>
 
     </div>

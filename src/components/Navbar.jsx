@@ -54,7 +54,7 @@ const Navbar = () => {
 
    </div>
   
-   <div className={`md:hidden absolute top-[70px] w-screen flex flex-col right-[20px] left-0 bg-black text-white p-10  space-y-10 ${isMenuOpen ? '' : 'hidden'} `}>
+   <div className={`md:hidden absolute top-[100px] w-screen flex flex-col right-[20px] left-0 bg-black text-white p-10  space-y-10 ${isMenuOpen ? '' : 'hidden'} `}>
       <Link to ="/">Home</Link>
        <Link to ="/about-us">About us</Link>
        <Link to ="/contact-us">Contact Us</Link>
