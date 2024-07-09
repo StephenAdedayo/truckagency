@@ -100,7 +100,7 @@ const Footer = () => {
 
 
    
-    <ul className='flex lg:space-x-10 md:space-x-5 underline '>
+    <ul className='flex lg:space-x-10 space-x-5 underline '>
         <li><Link to="/">Privacy Policy</Link></li>
         <li><Link to="/">Terms Of Service</Link></li>
         <li><Link to ="/">Cookies Settings</Link></li>

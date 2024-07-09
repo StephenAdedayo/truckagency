@@ -13,14 +13,14 @@ const Services = () => {
         {img:'/Vector.png', title:'Excavating Partner', body:'Our partnership with Total Excavation Inc makes us your most reliable source for all things dirt.', button:'read more'}
     ])
   return (
-    <section className='lg:px-20 px-4 max-w-screen-2xl'>
+    <section className='lg:px-20 px-4 max-w-screen-2xl my-40'>
         <div className='container mx-auto'>
         
 
-        <div className='flex flex-col lg:flex-row justify-between items-center max-sm:gap-10'>
+        <div className='flex flex-col lg:flex-row justify-between items-center gap-20'>
      
-        <div className='space-y-7'>
-         <p className='text-4xl  max-sm:text-center '>Services</p>
+        <div className='space-y-7 max-sm:text-center'>
+         <p className='text-4xl   '>Services</p>
          <h1 className='text-2xl'>Gravel, Aggregate, Soils & Fill Delivery</h1>
          <p>Supply and delivery of all aggregates, Gravel and soils, direct from quarry/supplier to your doorstep.</p>
          <div>
