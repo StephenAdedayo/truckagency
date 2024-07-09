@@ -14,13 +14,13 @@ const Team = () => {
        ]
   return (
     <section className='my-20 lg:px-20 px-4 '>
-      <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20'>
+      <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
    
       {
         workers.map(worker => (
-            <div className=' space-y-4'>
+            <div className=' space-y-4 shadow-xl px-5 py-[20px] hover:bg-red-800 hover:text-white rounded-lg hover:transition-all hover:duration-300 hover:delay-100 hover:scale-105'>
                 <img src={worker.img} alt="" />
-                <p>Name: {worker.name}</p>
+                <p className='font-[700]'>Name: {worker.name}</p>
                 <p>Job: {worker.jobTitle}</p>
                 <p>OTD: {worker.desc}</p>
                 <div className='flex space-x-3 '>

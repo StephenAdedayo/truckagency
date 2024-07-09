@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     const currentYear = new Date().getFullYear()
   return (
-    <footer className='my-20 lg:px-20 px-4 '>
+    <footer className='mt-20 lg:px-20 px-4 bg-black text-white mb-none py-20 overflow-hidden '>
    <div className='container mx-auto'>
    
 
@@ -17,9 +17,9 @@ const Footer = () => {
      <img src="/logo1.png" className='w-[100px]' alt="" />
      <p>Join our newsletter to stay up to date on features and releases.</p>
      
-     <form action="" className='flex gap-2'>
-        <input type="email" placeholder='email address' className='border border-l-0 border-black px-6 py-3' />
-        <button type='submit' className='border border-r-0 border-black px-6 py-3'>Subscribe</button>
+     <form action="" className='flex gap-2 flex-col '>
+        <input type="email" placeholder='email address' className='border w-[400px] rounded-lg border-l-0 border-white px-6 py-3' />
+        <button type='submit' className='border border-white px-6 py-3 w-fit rounded-lg'>Subscribe</button>
      </form>
     <p>By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.</p>
     </div>
@@ -100,7 +100,7 @@ const Footer = () => {
 
 
    
-    <ul className='flex space-x-10 underline '>
+    <ul className='flex lg:space-x-10 md:space-x-5 underline '>
         <li><Link to="/">Privacy Policy</Link></li>
         <li><Link to="/">Terms Of Service</Link></li>
         <li><Link to ="/">Cookies Settings</Link></li>

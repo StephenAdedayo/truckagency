@@ -8,8 +8,8 @@ const WordsAbout = () => {
       <section className='lg:px-20 px-4 my-20 max-w-screen-2xl'>
        <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 justify-between items-center'>
  
-     <div className='space-y-5 max-md:text-center'>
-      <p>Our Company</p>
+     <div className='space-y-5 max-md:text-center text-white rounded-lg bg-red-800 py-[40px] px-5'>
+      <p className='text-4xl font-semibold'>Our Company</p>
       <p>About KRATOS trucking</p>
       <p>"At Kratos Trucking, our main goal is to have you looking AT your material, rather than FOR your material."
       </p>

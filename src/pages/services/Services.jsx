@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
-import { FaArrowRight } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import OurService from './OurService'
+import Navbar from '../../components/Navbar'
 import ServicesList from '../../components/ServicesList'
+import Contact from '../home/Contact'
+import Footer from '../home/Footer'
 
 const Services = () => {
     const [services, setServices] = useState([
@@ -13,38 +15,16 @@ const Services = () => {
         {img:'/Vector.png', title:'Excavating Partner', body:'Our partnership with Total Excavation Inc makes us your most reliable source for all things dirt.', button:'read more'}
     ])
   return (
-    <section className='lg:px-20 px-4 max-w-screen-2xl'>
-        <div className='container mx-auto'>
-        
+    <>
+    <Navbar />
+    <OurService />
 
-        <div className='flex flex-col lg:flex-row justify-between items-center max-sm:gap-10'>
-     
-        <div className='space-y-7'>
-         <p className='text-4xl  max-sm:text-center '>Services</p>
-         <h1 className='text-2xl'>Gravel, Aggregate, Soils & Fill Delivery</h1>
-         <p>Supply and delivery of all aggregates, Gravel and soils, direct from quarry/supplier to your doorstep.</p>
-         <div>
-         <Link to="/" className='py-4 px-8 bg-indigo-800 rounded-lg  text-white'>Get An Estimate <FaArrowRight className='inline-flex '/></Link>
-         </div>
-
-        </div>
-
-
-        <div className='grid grid-cols-1 gap-2 lg:grid-cols-2'>
-        
-      <ServicesList services={services}/>
-
-
-        </div>
-
-
-
-
-        </div>
-
-
-        </div>
-    </section>
+    <div className='grid grid-cols-1 gap-2 lg:grid-cols-3 md:grid-cols-2 px-4 my-40 lg:px-20'>
+    <ServicesList services={services}/>
+    </div>
+    <Contact />
+    <Footer />
+    </>
   )
 }
 

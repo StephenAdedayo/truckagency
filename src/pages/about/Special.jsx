@@ -8,9 +8,9 @@ const Special = () => {
       <div className='space-y-10 '>
       
 
-      <h1 className='text-6xl'>About Us</h1>
+      <h1 className='lg:text-6xl text-4xl'>About Us</h1>
 
-       <p className='text-4xl '>We pride ourselves with our custom services  
+       <p className='lg:text-4xl text-2xl '>We pride ourselves with our custom services  
        and <br />communication to our customers</p>
 
 

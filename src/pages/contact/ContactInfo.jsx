@@ -16,7 +16,7 @@ const ContactInfo = () => {
       <input type="email" className='border border-black w-full px-5 py-5 rounded-lg' placeholder='' /> <br />
       <textarea name="" id="" cols="30" rows="15" className='w-full rounded-lg border p-2 border-black' placeholder='Type Your Message'></textarea>
        <input type="checkbox" /> <label For="" >I accept The Terms</label> <br />
-       <button type='submit' className='text-white bg-black px-3 py-2 rounded-md'>Submit</button>
+       <button type='submit' className='text-white bg-indigo-800 px-6 py-3 rounded-md'>Submit</button>
        </form>
 
      

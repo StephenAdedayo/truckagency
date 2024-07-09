@@ -10,7 +10,7 @@ const Contact = () => {
     <>
     <Navbar />
     <ContactInfo />
-    <Companies />
+    {/* <Companies /> */}
     <SocialMedia />
     <Footer />
 
