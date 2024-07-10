@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Contact = () => {
   return (
-   <section className='my-20 lg:px-20 px-4 bg-red-900 py-24 text-white -mb-[80px]'>
+   <section className='my-20 lg:px-20 px-4 bg-secondaryColors py-24 text-white -mb-[80px]'>
     <div className='container mx-auto'>
 
      {/* <div className='text-center space-y-4'>

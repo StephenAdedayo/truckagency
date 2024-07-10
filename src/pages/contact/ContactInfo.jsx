@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactInfo = () => {
   return (
-    <section className='my-20 px-4 lg:px-20 max-w-screen-2xl'>
+    <section className='mb-20 px-5 lg:px-40 max-w-screen-2xl'>
         <div className='container mx-auto flex flex-col lg:flex-row justify-between items-center min-h-[100vh]'>
              
           

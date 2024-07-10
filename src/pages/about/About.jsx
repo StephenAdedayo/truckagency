@@ -6,6 +6,7 @@ import Team from './Team'
 import Customers from '../home/Customers'
 import Contact from '../home/Contact'
 import Footer from '../home/Footer'
+import Mission from './Mission'
 
 
 const About = () => {
@@ -14,6 +15,7 @@ const About = () => {
      <Navbar />
      <Special />
      <WordsAbout />
+     <Mission />
      <Team />
      <Customers />
      <Contact />

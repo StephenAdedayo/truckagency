@@ -8,16 +8,18 @@ import Customers from './Customers'
 import Resource from './Resource'
 import Contact from './Contact'
 import Footer from './Footer'
+import Customermised from './Customermised'
 
 
 const Home = () => (
   <div>
     
     <Navbar />
-    <LandScape /> 
+    {/* <LandScape />  */}
     <WhatWeDo />
     <About />
     <Services />
+    <Customermised />
     <Customers />
     <Resource />
     <Contact />

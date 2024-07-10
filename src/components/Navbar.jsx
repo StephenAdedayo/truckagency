@@ -22,16 +22,18 @@ const Navbar = () => {
    }
 
   return (
-   <nav className='w-full fixed top-0 right-0 left-0 bg-white px-8  border-b-4 border-b-blue-800 z-10'>
+   <nav className='w-full sticky top-0  bg-transparent h-[100px]  z-10 py-5 lg:px-40 px-5'>
    <div className='w-full flex items-center justify-between '>
       
-   <img src="/logo1.png" className='w-[100px] mr-[20px]' alt="" />
+<div className='' >
+<img src="/trucklogo1.png" className='w-[200px] mr-[20px] ' alt=""  />
+</div>
 
 
-      <div className='space-x-5 font-semibold'>
-       <div className='flex items-center '>
+      {/* <div className='space-x-5 font-semibold text-white  pr-20'> */}
+       {/* <div className='flex items-center '> */}
       
-      <div className='hidden md:block space-x-10'>
+      <div className='hidden md:flex space-x-10 text-white font-semibold items-center'>
        <Link to ="/">Home</Link>
        <Link to ="/about-us">About us</Link>
        <Link to ="/contact-us">Contact Us</Link>
@@ -39,8 +41,8 @@ const Navbar = () => {
       <Link to ="/services" onMouseOver={() => serviceMenu()}>Services</Link>
        
       </div>
-      </div>
-      </div>
+      {/* </div> */}
+      {/* </div> */}
 
       
 

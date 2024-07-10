@@ -1,56 +1,60 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import vector from '/Vector.png'
+import 'animate.css';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { FiTarget } from "react-icons/fi";
+import { FaEye } from 'react-icons/fa';
+import { IoDiamondOutline } from "react-icons/io5";
+
+
+
 
 const About = () => {
-    const [logo, setLogo] = useState([
-        {img:"/Vector.png", text: "WebFlow", key:1},
-        {img:"/Vector.png", text: "WebFlow", key:2},
-        {img:"/Vector.png", text: "WebFlow", key:3},
-        {img:"/Vector.png", text: "WebFlow" , key:4},
-        {img:"/Vector.png", text: "WebFlow", key:5},
-        
-        
-    ])
-  return (
-   <main className='max-w-screen-2xl my-20 lg:px-20 px-4 min-h-[100vh]'>
 
-    <div className='container mx-auto'>
-        <p className='text-center text-2xl' >We've worked with great companies <span className='text-red-800'>[social proof to build credibility]</span></p>
+    const [about, setAbout] = useState([
+        {img:<FiTarget />, title:"Our Mission", body:"is to elevate quality of lives by developing solutions and products that improve their wealth, health and productivity."},
+        {img:<FaEye />, title:"Our Vision", body:"is to elevate quality of lives by developing solutions and products that improve their wealth, health and productivity."},
+        {img:<IoDiamondOutline />, title:"Our Philoposhy", body:"is to elevate quality of lives by developing solutions and products that improve their wealth, health and productivity."},
+        {img:<IoDiamondOutline />, title:"Our Culture", body:"is to elevate quality of lives by developing solutions and products that improve their wealth, health and productivity."},
+    ])
+   
+
+    useEffect(() => {
+        AOS.init()
+    }, [])
+
+  return (
+   <main className='max-w-screen-2xl my-20 xl:px-40 px-5 max-sm:mb-[200px] min-h-[100vh] relative'>
+
+    <div className='container mx-auto flex flex-col md:flex-row gap-20 '>
+         
+         <div className='bg-primaryColors text-white space-y-10 rounded-lg py-20 px-10 flex-[50%]   -mt-[200px]'>
+
+        <h1 className='text-4xl leading-6 font-semibold'>Who we are</h1>
+        <hr />
+        <p>Kratos truck is an independent truck trading company specializing in the sales, distribution and storage of petroleum and cooking gas as well as related products. It’s ideally located in Lagos, Nigeria. Through its extensive network and specialized understanding of the global energy markets, Moahz Oil and Gas Limited provides its clients and partners access to innovative and competitive supply solutions of hydrocarbon and related products. From physical supply of petroleum products to investment in energy projects, its team of diversified professionals is always committed to providing cost effective, transparent and timing solutions.</p>
+      <button className='px-6 py-3 text-white border-2 border-white'>Read More</button>
+         </div>
 
       
-     
-     {/* <div className='flex  flex-wrap items-center  mt-[50px] justify-around'>
-       {logo.map(log => (
-        <div key={log.id} className='flex space-x-3'>
-            <img src={log.img} alt="" />
-            <p className=''>{log.text}</p>
+        <div className='grid grid-cols-1 sm:grid-cols-2 gap-5 max-sm:gap-10 flex-[50%]'>
+
+          {
+            about.map(abou => (
+                <div className=' space-y-3'>
+                {/* <img src={abou.img} alt="" /> */}
+                <p>{abou.img}</p>
+                <p className='text-primaryColors text-3xl font-semibold'>{abou.title}</p>
+                <p>{abou.body}</p>
+                </div>
+            ))
+          }
+
+
         </div>
-       ))}
-     </div> */}
-
-<div className='flex flex-col justify-between items-center md:flex-row mt-20'>
-
-<div className='space-y-4 max-md:text-center '>
-
-<p className='text-4xl '>About</p>
-<p className='lg:text-xl md:text-lg text-xl'>We Have Services Tailored to Your Needs</p>
-<p className='lg:text-2xl md:text-xl text-2xl'>Delivering the Best <br /> <span className='text-red-800'>Custom Trucking Experience</span> </p>
-<p className='lg:text-2xl md:text-xl text-2xl'>"At Haulland Trucking, <br /> our main goal is to have you looking AT <br /> your material, rather than <br />FOR your material."</p>
-
-<button className='py-2 px-4 text-white bg-indigo-800 rounded-lg'>Learn More</button>
-
-</div>
 
 
-<div className='max-md:mt-[40px]'>
-    <img src="https://media.istockphoto.com/id/520703835/photo/truck-and-highway-at-sunset-transportation-background.jpg?b=1&s=612x612&w=0&k=20&c=riFEK9zhzhESWZ46tF_11d-Mu8pQrk14iMoI4jfmW7o=" alt="" />
-</div>
-
-</div>
-
-
-
-    
     </div>
 
 

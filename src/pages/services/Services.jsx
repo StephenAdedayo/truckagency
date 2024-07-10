@@ -4,6 +4,10 @@ import Navbar from '../../components/Navbar'
 import ServicesList from '../../components/ServicesList'
 import Contact from '../home/Contact'
 import Footer from '../home/Footer'
+import ServeList from '../../components/ServeList'
+import AboutServe from './AboutServe'
+
+
 
 const Services = () => {
     const [services, setServices] = useState([
@@ -18,6 +22,7 @@ const Services = () => {
     <>
     <Navbar />
     <OurService />
+    <AboutServe />
 
     <div className='grid grid-cols-1 gap-2 lg:grid-cols-3 md:grid-cols-2 px-4 my-40 lg:px-20'>
     <ServicesList services={services}/>
