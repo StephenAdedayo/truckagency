@@ -1,5 +1,4 @@
 import React from 'react'
-import LandScape from './LandScape'
 import WhatWeDo from './WhatWeDo'
 import Navbar from '../../components/Navbar'
 import About from './About'
@@ -9,16 +8,17 @@ import Resource from './Resource'
 import Contact from './Contact'
 import Footer from './Footer'
 import Customermised from './Customermised'
+import ServicesList from '../../components/ServicesList'
 
 
 const Home = () => (
   <div>
     
     <Navbar />
-    {/* <LandScape />  */}
     <WhatWeDo />
     <About />
     <Services />
+    <ServicesList />
     <Customermised />
     <Customers />
     <Resource />
