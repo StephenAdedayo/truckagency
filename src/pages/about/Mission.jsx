@@ -6,22 +6,22 @@ import { IoDiamondOutline } from "react-icons/io5";
 const Mission = () => {
   const [about, setAbout] = useState([
     {
-      img: <FiTarget />,
+      img: <FiTarget className="text-4xl" />,
       title: "Our Mission",
       body: "is to elevate quality of lives by developing solutions and products that improve their wealth, health and productivity.",
     },
     {
-      img: <FaEye />,
+      img: <FaEye className="text-4xl"/>,
       title: "Our Vision",
       body: "is to elevate quality of lives by developing solutions and products that improve their wealth, health and productivity.",
     },
     {
-      img: <IoDiamondOutline />,
+      img: <IoDiamondOutline className="text-4xl" />,
       title: "Our Philoposhy",
       body: "is to elevate quality of lives by developing solutions and products that improve their wealth, health and productivity.",
     },
     {
-      img: <IoDiamondOutline />,
+      img: <IoDiamondOutline className="text-4xl"/>,
       title: "Our Culture",
       body: "is to elevate quality of lives by developing solutions and products that improve their wealth, health and productivity.",
     },

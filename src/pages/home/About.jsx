@@ -4,28 +4,28 @@ import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FiTarget } from "react-icons/fi";
-import { FaEye } from "react-icons/fa";
+import { FaAward, FaEye } from "react-icons/fa";
 import { IoDiamondOutline } from "react-icons/io5";
 
 const About = () => {
   const [about, setAbout] = useState([
     {
-      img: <FiTarget />,
+      img: <FiTarget  className="text-4xl" />,
       title: "Our Mission",
       body: "is to elevate quality of lives by developing solutions and products that improve their wealth, health and productivity.",
     },
     {
-      img: <FaEye />,
+      img: <FaEye  className="text-4xl"/>,
       title: "Our Vision",
       body: "is to elevate quality of lives by developing solutions and products that improve their wealth, health and productivity.",
     },
     {
-      img: <IoDiamondOutline />,
+      img: <FaAward  className="text-4xl"/>,
       title: "Our Philoposhy",
       body: "is to elevate quality of lives by developing solutions and products that improve their wealth, health and productivity.",
     },
     {
-      img: <IoDiamondOutline />,
+      img: <IoDiamondOutline  className="text-4xl"/>,
       title: "Our Culture",
       body: "is to elevate quality of lives by developing solutions and products that improve their wealth, health and productivity.",
     },

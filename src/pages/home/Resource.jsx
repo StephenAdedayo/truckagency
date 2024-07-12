@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { LiaTruckSolid } from "react-icons/lia";
+import { PiTruckTrailer } from "react-icons/pi";
+import { FaTruckMonster } from "react-icons/fa";
 
 const Resource = () => {
   useEffect(() => {
@@ -10,7 +13,7 @@ const Resource = () => {
 
   const [blogs, setBlog] = useState([
     {
-      img: "/truck.png",
+      img: <LiaTruckSolid  className="text-6xl"/>,
       title: "Dump Trucks",
       header: "",
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim...",
@@ -19,7 +22,7 @@ const Resource = () => {
       date: "11 jan 2022 . 5 mins read",
     },
     {
-      img: "/truck.png",
+      img: <PiTruckTrailer className="text-6xl"/>,
       title: "Roll-Off Bins",
       header: "",
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim...",
@@ -28,7 +31,7 @@ const Resource = () => {
       date: "11 jan 2022 . 5 mins read",
     },
     {
-      img: "/truck.png",
+      img: <FaTruckMonster className="text-6xl" />,
       title: "Excavators",
       header: "",
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim...",
@@ -58,7 +61,8 @@ const Resource = () => {
           {blogs.map((blog) => (
             <div className="flex items-center bg-white shadow-xl py-8 px-5 rounded-lg hover:bg-secondaryColors hover:text-white transition-all duration-500 delay-100 hover:scale-105  " data-aos="fade-up" data-aos-duration="600">
               <div className="space-y-4">
-                <img src={blog.img} alt="" className="w-[100px]" />
+                {/* <img src={blog.img} alt="" className="w-[100px]" /> */}
+                <p>{blog.img}</p>
                 <p>{blog.title}</p>
                 <p>{blog.header}</p>
                 <p>{blog.body}</p>
