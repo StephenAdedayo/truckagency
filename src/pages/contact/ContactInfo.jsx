@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const ContactInfo = () => {
+
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
     <section className="my-20 px-5 lg:px-40 max-w-screen-2xl">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center min-h-[100vh]">
         <div className="mt-[100px]">
-          <h1 className="text-2xl mb-[20px]">Contact Us</h1>
-          <p className="text-lg mb-[20px]">
+          <h1 className="text-2xl mb-[20px]" data-aos="fade-up" data-aos-duration ="600">Contact Us</h1>
+          <p className="text-lg mb-[20px]" data-aos="fade-up" data-aos-duration ="600">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, non.
           </p>
-          <form action="" className="space-y-4">
+          <form action="" className="space-y-4" data-aos="fade-up" data-aos-duration ="600">
             <label for="">Name</label> <br />
             <input
               type="text"

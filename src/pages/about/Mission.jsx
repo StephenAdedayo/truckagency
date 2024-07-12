@@ -28,8 +28,8 @@ const Mission = () => {
   ]);
 
   return (
-    <div className="my-20 px-5 lg:px-40 max-w-screen-2xl bg-secondaryColors min-h-[50vh] ">
-      <div className="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-3 gap-5 max-md:gap-20 h-full py-20 flex-[50%]">
+    <div className="my-20 px-5 lg:px-40 max-w-screen-2xl bg-secondaryColors min-h-[50vh] " >
+      <div className="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-3 gap-5 max-md:gap-20 h-full py-20 flex-[50%]" data-aos="fade-up" data-aos-duration="600">
         {about.map((abou) => (
           <div className="text-white space-y-3">
             {/* <img src={abou.img} alt="" /> */}

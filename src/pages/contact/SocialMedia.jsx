@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaEnvelope } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 const SocialMedia = () => {
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
+
   const socialMedia = [
     {
       img: <FaEnvelope />,
@@ -34,7 +44,7 @@ const SocialMedia = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 mt-40 items-center justify-center max-md:mb-[300px]  lg:grid-cols-4 px-5 lg:px-40  gap-10">
       {socialMedia.map((media) => (
-        <div className="space-y-4 bg-white shadow-xl py-[20px] px-5 rounded-lg hover:bg-secondaryColors hover:text-white hover:transition-all hover:duration-300 hover:delay-100 hover:scale-105">
+        <div className="space-y-4 bg-white shadow-xl py-[20px] px-5 rounded-lg hover:bg-secondaryColors hover:text-white hover:transition-all hover:duration-300 hover:delay-100 hover:scale-105" data-aos="fade-up" data-aos-duration ="600">
           <p>{media.img}</p>
           <p>{media.title}</p>
           <p>{media.body}</p>

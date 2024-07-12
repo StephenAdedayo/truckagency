@@ -13,7 +13,7 @@ const WhatWeDo = () => {
       <div className="container mx-auto flex items-center p-10 h-[100vh] justify-center  ">
         <div class="animate__animated animate__fadeInUp animate__delay-0.5">
           <div className="space-y-5 text-white text-center">
-            <h1 className="lg:text-6xl md:text-4xl text-3xl">
+            <h1 className="lg:text-7xl md:text-4xl text-3xl">
               Reliable Trucking <br /> and LandScape Supplier
             </h1>
             <p className="lg:text-3xl md:text-2xl text-2xl ">
