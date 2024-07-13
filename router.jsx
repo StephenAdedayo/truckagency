@@ -4,6 +4,7 @@ import About from "./src/pages/about/About";
 import Contact from "./src/pages/contact/Contact";
 import Services from "./src/pages/services/Services";
 
+
 export const router = createBrowserRouter([
     {path: "/", element: <App />},
     {path:"/about-us", element:<About />},

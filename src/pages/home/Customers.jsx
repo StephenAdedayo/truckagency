@@ -75,7 +75,7 @@ const Customers = () => {
 
             <p data-aos="fade-up" data-aos-duration="600" className="leading-5 text-gray-800 ">
               Building strong relationships has been the key to our success.
-              We’ll work hard for you and you’ll enjoy working with us too.
+              We’ll work hard for you and you’ll enjoy working with us.
             </p>
           </div>
         </div>

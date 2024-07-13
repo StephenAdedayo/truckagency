@@ -43,8 +43,8 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`md:hidden absolute top-[100px] w-screen flex flex-col right-[20px]  left-0 bg-primaryColors text-white p-10  space-y-10 ${
-          isMenuOpen ? "" : "hidden"
+        className={`md:hidden absolute w-screen transition-transform transform duration-500 ease-in-out  flex flex-col right-[20px]  left-0 bg-primaryColors text-white p-10  space-y-10 ${
+          isMenuOpen ? 'translate-y-5' : "-translate-y-[500px]"
         } `}
       >
         <Link to="/">Home</Link>
