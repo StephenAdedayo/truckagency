@@ -42,7 +42,7 @@ const Resource = () => {
     // {img:"/truck.png", title:"Dump Trucks", header:"", body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim...", image:"", name:"", date:"11 jan 2022 . 5 mins read" },
   ]);
   return (
-    <section className="my-40 max-w-screen-2xl  lg:px-40 px-5">
+    <section className="my-40 w-full  lg:px-40 px-5">
       <div className="container mx-auto">
         <div className="text-center  space-y-4">
           <p className="text-xl text-secondaryColors leading-6 font-[400] " data-aos="fade-up" data-aos-duration="600">

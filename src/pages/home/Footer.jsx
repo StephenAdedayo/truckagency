@@ -6,12 +6,15 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="mt-20 lg:px-20 px-5 bg-black text-white mb-none py-20 overflow-hidden ">
+    <footer className="mt-20 lg:px-40 px-5 bg-black w-full text-white mb-none py-20 overflow-hidden ">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center lg:space-x-20">
-          <div className="space-y-5  text-start">
-            <img src="/logo1.png" className="w-[100px]" alt="" />
-            <p>
+        <div className="flex justify-center items-center  flex-col lg:flex-row lg:space-x-20">
+          <div className="space-y-2 flex-[50%]  text-start">
+            <img src="/logo1.png" className="w-[200px]" alt="" />
+
+
+            <p className="leading-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora enim harum distinctio vel sint ut asperiores aliquam praesentium ullam deserunt minus repellat maxime consequatur ratione totam magnam, consectetur commodi explicabo.</p>
+            {/* <p>
               Join our newsletter to stay up to date on features and releases.
             </p>
 
@@ -31,12 +34,12 @@ const Footer = () => {
             <p>
               By subscribing you agree to with our Privacy Policy and provide
               consent to receive updates from our company.
-            </p>
+            </p> */}
           </div>
 
-          <div className="flex mt-[50px] flex-col justify-between sm:flex-row col-span-2 space-y-10 sm:space-y-0 ">
-            <div className="">
-              <h1 className="mb-[20px] text-secondaryColors">Quick Links</h1>
+          <div className="flex mt-[50px] flex-col  sm:flex-row flex-[50%] space-y-10 sm:space-y-0 ">
+            <div className="flex-[50%]">
+              <h1 className="mb-[20px] text-secondaryColors">Useful Links</h1>
               <ul className="space-y-3">
                 <li>
                   <Link to="/" className=" hover:text-secondaryColors">
@@ -64,7 +67,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
+            {/* <div>
               <h1 className="mb-[20px] text-secondaryColors">Our Services</h1>
               <ul className="space-y-3 ">
                 <li>
@@ -98,18 +101,22 @@ const Footer = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
-            <div>
+            <div className="flex-[50%]">
               <h1 className="mb-[20px] text-secondaryColors">Contact us</h1>
 
-              <ul className="mb-[20px] space-y-1">
-                <p className=" hover:text-secondaryColors">Order Desk</p>
-                <p className=" hover:text-secondaryColors">289-768-8710</p>
-                <p className=" hover:text-secondaryColors">email</p>
+              <ul className="mb-[20px] space-y-3">
+                {/* <p className=" hover:text-secondaryColors">Order Desk</p> */}
+                <p>Phone: +234 906 544 1111</p>
+                {/* <p className=" hover:text-secondaryColors">289-768-8710</p> */}
+                {/* <p className=" hover:text-secondaryColors">email</p> */}
+                <p>Mail: info@moahzoilandgasld.com</p>
+                <p text>Address: 6th floor, Workbay Building, 3/9 Olu-Koleosho street, off Simbiat Abiola Rd, Ikeja, Lagos, Nigeria
+                </p>
               </ul>
 
-              <ul className="space-y-1  ">
+              {/* <ul className="space-y-1  ">
                 <p className=" hover:text-secondaryColors">Office:</p>
                 <p className=" hover:text-secondaryColors">289-768-9161</p>
                 <p className=" hover:text-secondaryColors">email</p>
@@ -120,7 +127,7 @@ const Footer = () => {
                 <FaXTwitter />
                 <FaFacebook />
                 <FaLinkedin />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -128,10 +135,10 @@ const Footer = () => {
 
       <hr className="mt-[70px]" />
 
-      <div className="flex flex-col md:flex-row justify-between items-center mt-[50px]">
-        <p className="max-md:mb-[10px]">©{currentYear}. All Rights Reserved</p>
+      <div className="text-center mt-[50px]">
+        <p className="">©{currentYear}. All Rights Reserved</p>
 
-        <ul className="flex lg:space-x-10 space-x-5 underline ">
+        {/* <ul className="flex lg:space-x-10 space-x-5 underline ">
           <li>
             <Link to="/">Privacy Policy</Link>
           </li>
@@ -141,7 +148,7 @@ const Footer = () => {
           <li>
             <Link to="/">Cookies Settings</Link>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </footer>
   );

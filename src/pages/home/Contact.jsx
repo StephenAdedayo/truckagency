@@ -10,11 +10,35 @@ const Contact = () => {
   }, []);
 
   return (
-    <section className="my-20 lg:px-20 px-4 bg-secondaryColors py-24 text-white -mb-[80px]">
-      <div className="container mx-auto">
-        <div></div>
+    <section className="my-20 w-full lg:px-40 px-4 bg-secondaryColors py-24 text-white -mb-[80px]">
+      <div className="container mx-auto flex flex-col xl:flex-row gap-10">
+        
 
-        <div className="space-y-10 text-center">
+        <div className="flex-[50%]">
+          <p className="text-[40px] font-bold mb-5">For Enquires</p>
+          <p>Get in touch! Whether you have a question, suggestion, or just want to say hello, we’re all ears. Reach out to our friendly team and let’s start a conversation. Your feedback matters!</p>
+        </div>
+
+
+        <div className="flex-[50%]  flex flex-col  ">
+          
+       <form action="" className="flex gap-5 flex-col lg:flex-row  w-full ">
+        
+        <input type="text" placeholder="Full Name" className="py-3 w-full lg:px-10 px-6 text-black"/>
+        <input type="email" className="py-3 lg:px-10 px-6 w-full text-black" placeholder="Email"/> 
+        
+
+        
+       </form>
+       <div>
+       <button className="px-10 py-3 mt-3 w-full text-center bg-black" >Send</button>
+       </div>
+
+
+
+        </div>
+
+        {/* <div className="space-y-10 text-center">
           <p
             className="text-5xl font-semibold"
             data-aos="fade-up"
@@ -48,7 +72,7 @@ const Contact = () => {
               Get a free estimate <FaArrowRight className="inline-flex" />
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

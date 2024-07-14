@@ -45,8 +45,8 @@ const AllServices = () => {
     },
   ]);
   return (
-    <div>
-      <div className="grid grid-cols-1 gap-2 lg:grid-cols-3 md:grid-cols-2 px-5 my-20 lg:px-40">
+    <div className="w-full">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 md:grid-cols-2 px-5 my-20 lg:px-40">
         {services.map((service) => (
           <div
             key={service.id}

@@ -11,7 +11,7 @@ const ServicesList = () => {
   const [services, setServices] = useState([
     {
       img: <GiMineTruck  className="text-6xl"/>,
-      title: "Gravel, Aggregate, Soils & Fill Delivery",
+      title: "Gravel, Aggregate",
       body: "Supply and delivery of all aggregates, Gravel and soils, direct from quarry/supplier to your doorstep.",
       button: "read more",
     },

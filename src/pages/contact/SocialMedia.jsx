@@ -22,12 +22,12 @@ const SocialMedia = () => {
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.",
       link: "email",
     },
-    {
-      img: <FaMessage />,
-      title: "Live Chat",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.",
-      link: "Start New Chat",
-    },
+    // {
+    //   img: <FaMessage />,
+    //   title: "Live Chat",
+    //   body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.",
+    //   link: "Start New Chat",
+    // },
     {
       img: <FaPhoneAlt />,
       title: "Phone",
@@ -42,7 +42,7 @@ const SocialMedia = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 mt-40 items-center justify-center max-md:mb-[300px]  lg:grid-cols-4 px-5 lg:px-40  gap-10">
+    <div className=" w-full grid grid-cols-1 md:grid-cols-2 mt-40 items-center justify-center max-md:mb-[300px]  lg:grid-cols-3 px-5 lg:px-40  gap-10">
       {socialMedia.map((media) => (
         <div className="space-y-4 bg-white shadow-xl py-[20px] px-5 rounded-lg hover:bg-secondaryColors hover:text-white hover:transition-all hover:duration-300 hover:delay-100 hover:scale-105" data-aos="fade-up" data-aos-duration ="600">
           <p>{media.img}</p>

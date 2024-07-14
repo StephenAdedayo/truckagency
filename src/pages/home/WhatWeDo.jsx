@@ -9,14 +9,14 @@ const WhatWeDo = () => {
     AOS.init();
   });
   return (
-    <section className=' mb-24 px-4 lg:px-40 max-w-screen-2xl bg-cover  h-screen bg-[url("https://res.cloudinary.com/dfuse3jtq/image/upload/v1720603403/pexels-quintingellar-2199293_1_bvluux.png")]'>
+    <section className=' mb-24 px-4 lg:px-40 w-full bg-cover  h-screen bg-[url("https://res.cloudinary.com/dfuse3jtq/image/upload/v1720603403/pexels-quintingellar-2199293_1_bvluux.png")]'>
       <div className="container mx-auto flex items-center p-10 h-[100vh] justify-center  ">
         <div class="animate__animated animate__fadeInUp animate__delay-0.5">
           <div className="space-y-5 text-white text-center">
-            <h1 className="lg:text-7xl md:text-4xl text-3xl">
-              Reliable Trucking <br /> and LandScape Supplier
+            <h1 className="text-[48px] ">
+              Reliable Trucking  and  LandScape Supplier
             </h1>
-            <p className="lg:text-3xl md:text-2xl text-2xl ">
+            {/* <p className="lg:text-3xl md:text-2xl text-2xl ">
               Servicing Commercial & Residential Projects
             </p>
             <div>
@@ -26,7 +26,7 @@ const WhatWeDo = () => {
               >
                 Get an Estimate <FaArrowRight className="inline-flex" />
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
         <div>

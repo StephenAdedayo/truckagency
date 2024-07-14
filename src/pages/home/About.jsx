@@ -36,15 +36,15 @@ const About = () => {
   }, []);
 
   return (
-    <main className="max-w-screen-2xl my-20 xl:px-40 px-5 max-sm:mb-[200px] min-h-[70vh] relative">
-      <div className="container mx-auto flex flex-col md:flex-row gap-20 ">
+    <main className="w-full my-20 xl:px-40 px-5 max-sm:mb-[200px] min-h-[70vh] relative">
+      <div className="container mx-auto flex flex-col lg:flex-row gap-20 ">
         <div
           className="bg-primaryColors text-white space-y-10 rounded-lg py-20 px-10 flex-[50%]   -mt-[200px]"
           data-aos="fade-up"
           data-aos-duration="600"
         >
           <h1 className="text-4xl leading-6 font-semibold">Who we are</h1>
-          <hr />
+          <hr className="bg-secondaryColors"/>
           <p>
             Kratos truck is an independent truck trading company specializing in
             the sales, distribution and storage of petroleum and cooking gas as
@@ -65,7 +65,7 @@ const About = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-sm:gap-10 flex-[50%]">
           {about.map((abou) => (
             <div
-              className=" space-y-3"
+              className=" space-y-3 max-md:px-8"
               data-aos="fade-up"
               data-aos-duration="600"
             >

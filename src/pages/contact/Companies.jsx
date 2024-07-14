@@ -12,7 +12,7 @@ const Companies = () => {
   ]);
 
   return (
-    <div className="my-20 px-4 lg:px-20">
+    <div className="my-20 px-4 lg:px-20 w-full">
       <div className="container mx-auto flex flex-col items-center justify-between md:flex-row">
         <div className="max-sm:text-center">
           <p>

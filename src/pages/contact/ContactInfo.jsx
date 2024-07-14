@@ -11,7 +11,7 @@ const ContactInfo = () => {
   }, [])
 
   return (
-    <section className="my-20 px-5 lg:px-40 max-w-screen-2xl">
+    <section className="my-20 px-5 lg:px-40 w-full">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center min-h-[100vh]">
         <div className="mt-[100px]">
           <h1 className="text-2xl mb-[20px]" data-aos="fade-up" data-aos-duration ="600">Contact Us</h1>
@@ -22,7 +22,7 @@ const ContactInfo = () => {
             <label for="">Name</label> <br />
             <input
               type="text"
-              className="border border-black w-full px-5 py-5 rounded-lg"
+              className="outline-none bg-gray-100 w-full px-5 py-5 rounded-lg"
               placeholder=""
             />{" "}
             <br />
@@ -30,16 +30,17 @@ const ContactInfo = () => {
             <label For="">Email</label> <br />
             <input
               type="email"
-              className="border border-black w-full px-5 py-5 rounded-lg"
+              className="outline-none bg-gray-100 w-full px-5 py-5 rounded-lg"
               placeholder=""
             />{" "}
+            <br />
             <br />
             <textarea
               name=""
               id=""
               cols="30"
               rows="15"
-              className="w-full rounded-lg border p-2 border-black"
+              className="w-full rounded-lg outline-none p-5 bg-gray-100 "
               placeholder="Type Your Message"
             ></textarea>
             <input type="checkbox" /> <label For="">I accept The Terms</label>{" "}

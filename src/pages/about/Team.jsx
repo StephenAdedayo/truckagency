@@ -42,7 +42,7 @@ const Team = () => {
     },
   ];
   return (
-    <section className="mt-20 mb-[300px] grid items-center justify-center lg:px-40 px-5 bg-gray-100 min-h-[100vh] ">
+    <section className="mt-20 w-full mb-[300px] grid items-center justify-center lg:px-40 px-5 bg-gray-100 min-h-[100vh] ">
       <div className="container mx-auto grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-10 content-center">
         {workers.map((worker) => (
           <div className=" space-y-4 shadow-xl  px-5 py-[20px] hover:bg-secondaryColors hover:text-white rounded-lg hover:transition-all hover:duration-300 hover:delay-100 hover:scale-105" data-aos="fade-up" data-aos-duration="600">

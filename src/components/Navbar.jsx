@@ -19,9 +19,10 @@ const Navbar = () => {
   return (
     <nav className="w-full fixed top-0  bg-white h-[100px]  z-10 py-5 lg:px-40 px-5">
       <div className="w-full flex items-center justify-between ">
-        <div className="">
-          <img src="/trucklogo1.png" className="w-[200px] mr-[20px] " alt="" />
-        </div>
+        
+        <Link to="/">
+        <img src="/trucklogo1.png" className="w-[200px] mr-[20px] " alt="" />
+        </Link>
 
         <div className="hidden md:flex space-x-10 text-primaryColors font-semibold items-center">
           <Link to="/">Home</Link>
@@ -54,7 +55,7 @@ const Navbar = () => {
         <Link to="/services">Services </Link>
       </div>
 
-      <div
+      {/* <div
         className={` absolute top-[100px] w-[400px] flex flex-col right-0 rounded-b-lg bg-primaryColors text-white p-10  space-y-10 ${
           isServiceOpen ? "" : "hidden"
         } `}
@@ -66,7 +67,7 @@ const Navbar = () => {
         <Link to="/">Contractor Yard Supply</Link>
         <Link to="/">Soil Screener</Link>
         <Link to="/">Excavation</Link>
-      </div>
+      </div> */}
     </nav>
   );
 };

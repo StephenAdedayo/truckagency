@@ -9,6 +9,7 @@ import Contact from './Contact'
 import Footer from './Footer'
 import Customermised from './Customermised'
 import ServicesList from '../../components/ServicesList'
+import Testimonials from './Testimonials'
 
 
 const Home = () => (
@@ -21,7 +22,8 @@ const Home = () => (
     <ServicesList />
     <Customermised />
     <Customers />
-    <Resource />
+    {/* <Resource /> */}
+    <Testimonials />
     <Contact />
     <Footer />
   </div>
