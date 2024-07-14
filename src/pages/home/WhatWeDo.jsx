@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
 const WhatWeDo = () => {
   useEffect(() => {
     AOS.init();
   });
   return (
-    <section className=' mb-24 px-4 lg:px-40 w-full bg-cover  h-screen bg-[url("https://res.cloudinary.com/dfuse3jtq/image/upload/v1720603403/pexels-quintingellar-2199293_1_bvluux.png")]'>
+    <section className=' mb-24 px-4 lg:px-40 w-full bg-cover  h-screen bg-[url("https://res.cloudinary.com/dfuse3jtq/image/upload/v1720999858/Frame_1_oqtqsc.png")]'>
       <div className="container mx-auto flex items-center p-10 h-[100vh] justify-center  ">
         <div class="animate__animated animate__fadeInUp animate__delay-0.5">
           <div className="space-y-5 text-white text-center">

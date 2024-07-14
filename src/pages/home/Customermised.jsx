@@ -8,7 +8,7 @@ const Customermised = () => {
     AOS.init();
   });
   return (
-    <div className='px-5 lg:px-40 my-20 w-full h-[70vh] bg-fixed  bg-cover grid place-items-center bg-[url("https://res.cloudinary.com/dfuse3jtq/image/upload/v1720603403/pexels-quintingellar-2199293_1_bvluux.png")]'>
+    <div className='px-5 lg:px-40 my-20 w-full h-[70vh] bg-fixed  bg-cover grid place-items-center bg-[url("https://res.cloudinary.com/dfuse3jtq/image/upload/v1720999858/Frame_1_oqtqsc.png")]'>
       <p
         className="text-[48px] font-bold text-white"
         data-aos="fade-up"

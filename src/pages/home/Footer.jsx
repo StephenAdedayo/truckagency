@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="mt-20 lg:px-40 px-5 bg-black w-full text-white mb-none py-20 overflow-hidden ">
+    <footer className="mt-20 lg:px-40 px-5 bg-black w-full text-white mb-none py-10 overflow-hidden ">
       <div className="container mx-auto">
         <div className="flex justify-center items-center  flex-col lg:flex-row lg:space-x-20">
           <div className="space-y-2 flex-[50%]  text-start">
@@ -135,7 +135,7 @@ const Footer = () => {
 
       <hr className="mt-[70px]" />
 
-      <div className="text-center mt-[50px]">
+      <div className="text-center mt-[40px]">
         <p className="">©{currentYear}. All Rights Reserved</p>
 
         {/* <ul className="flex lg:space-x-10 space-x-5 underline ">
