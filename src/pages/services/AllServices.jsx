@@ -9,20 +9,20 @@ const AllServices = () => {
   const [services, setServices] = useState([
     {
       img: <GiMineTruck  className="text-6xl"/>,
-      title: "Gravel, Aggregate, Soils & Fill Delivery",
-      body: "Supply and delivery of all aggregates, Gravel and soils, direct from quarry/supplier to your doorstep.",
+      title: "Haulage & Transportation",
+      body: "At Kratos Trucking, we understand the critical importance of efficient and reliable transportation for your business. Our Haulage & Transportation services are designed to ensure your goods are delivered safely and on time, no matter the distance.",
       button: "read more",
     },
     {
       img: <FaTruckRampBox className="text-6xl"/>,
-      title: "Dirt, Rubble & Snow Removal",
-      body: "Specializing in custom fill, rubble and snow removal from your landscape or construction project.",
+      title: "Freight & Logistics Services",
+      body: "Kratos Trucking offers a full suite of Freight & Logistics services designed to streamline your supply chain and enhance efficiency. From planning and coordination to execution and delivery, we handle every aspect of your logistics needs.",
       button: "read more",
     },
     {
       img: <LiaTruckLoadingSolid className="text-6xl"/>,
-      title: "Bin Rentals",
-      body: "We provide roll off bins for any construction, excavation or landscape project to easily remove soil, rubble or garbage.",
+      title: "Warehousing & Storage",
+      body: "Kratos Trucking offers secure and flexible warehousing and storage solutions to accommodate your business’s needs. Our facilities are equipped with advanced technology and security measures to ensure your inventory is stored safely and efficiently.",
       button: "read more",
     },
     {
@@ -50,7 +50,7 @@ const AllServices = () => {
         {services.map((service) => (
           <div
             key={service.id}
-            className=" space-y-5 py-10 shadow-xl text-black px-10 rounded-lg bg-white hover:bg-primaryColors hover:text-white hover:transition-all hover:duration-300 hover:delay-100 hover:scale-105"
+            className=" space-y-5 py-20 shadow-xl text-black px-8 rounded-lg bg-white hover:bg-primaryColors hover:text-white hover:transition-all hover:duration-300 hover:delay-100 hover:scale-105"
             data-aos="fade-up"
             data-aos-duration="600"
           >
@@ -58,9 +58,9 @@ const AllServices = () => {
             <p className="mb-[70px]">{service.img}</p>
             <p className="font-semibold text-2xl">{service.title}</p>
             <p>{service.body}</p>
-            <button className="capitalize px-6 py-3 bg-primaryColors border rounded-lg border-white text-white">
-              {service.button}
-            </button>
+            {/* <button className="capitalize px-6 py-3 bg-primaryColors border  border-white text-white"> */}
+              {/* {service.button} */}
+            {/* </button> */}
           </div>
         ))}
       </div>

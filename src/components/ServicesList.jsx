@@ -39,7 +39,7 @@ const ServicesList = () => {
   return (
     <>
       <div>
-        <div className="grid grid-cols-1 mb-20 gap-5 lg:grid-cols-3 px-5 lg:px-40 -mt-[80px]">
+        <div className="grid grid-cols-1 mb-20 gap-5 md:grid-cols-2 xl:grid-cols-3 px-5 lg:px-40 -mt-[30px]">
           {services.map((service) => (
             <div
               key={service.id}
@@ -51,9 +51,13 @@ const ServicesList = () => {
               <p className="mb-[70px]">{service.img}</p>
               <p className="font-semibold text-2xl">{service.title}</p>
               <p>{service.body}</p>
+              <div>
+              <Link to="/services">
               <button className="capitalize px-6 py-3 bg-primaryColors border border-white text-white">
                 {service.button}
               </button>
+              </Link>
+              </div>
             </div>
           ))}
         </div>

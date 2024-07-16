@@ -6,14 +6,20 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="mt-20 lg:px-40 px-5 bg-black w-full text-white mb-none py-10 overflow-hidden ">
+    <footer className=" lg:px-40 px-5 bg-primaryColors w-full text-white mb-none py-10 overflow-hidden ">
       <div className="container mx-auto">
         <div className="flex justify-center items-center  flex-col lg:flex-row lg:space-x-20">
           <div className="space-y-2 flex-[50%]  text-start">
-            <img src="/logo1.png" className="w-[200px]" alt="" />
+            {/* <img src="/logo1.png" className="w-[200px]" alt="" /> */}
+            <h1 className="text-[48px] font-bold">Kratos Trucking</h1>
 
 
-            <p className="leading-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora enim harum distinctio vel sint ut asperiores aliquam praesentium ullam deserunt minus repellat maxime consequatur ratione totam magnam, consectetur commodi explicabo.</p>
+            <p className="leading-6"> Founded with a vision to redefine the haulage and trucking industry,
+            Kratos Trucking is a premier transportation company committed to
+            delivering exceptional service and unmatched reliability. With our
+            deep industry expertise and a relentless focus on innovation, we
+            have established ourselves as a trusted partner for businesses
+            across various sectors.</p>
             {/* <p>
               Join our newsletter to stay up to date on features and releases.
             </p>
@@ -39,7 +45,7 @@ const Footer = () => {
 
           <div className="flex mt-[50px] flex-col  sm:flex-row flex-[50%] space-y-10 sm:space-y-0 ">
             <div className="flex-[50%]">
-              <h1 className="mb-[20px] text-secondaryColors">Useful Links</h1>
+              <h1 className="mb-[20px] text-white border-b-2 w-fit">Useful Links</h1>
               <ul className="space-y-3">
                 <li>
                   <Link to="/" className=" hover:text-secondaryColors">
@@ -104,7 +110,7 @@ const Footer = () => {
             </div> */}
 
             <div className="flex-[50%]">
-              <h1 className="mb-[20px] text-secondaryColors">Contact us</h1>
+              <h1 className="mb-[20px] text-white border-b-2 w-fit">Contact us</h1>
 
               <ul className="mb-[20px] space-y-3">
                 {/* <p className=" hover:text-secondaryColors">Order Desk</p> */}

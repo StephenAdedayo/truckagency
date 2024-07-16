@@ -7,6 +7,7 @@ import Customers from '../home/Customers'
 import Contact from '../home/Contact'
 import Footer from '../home/Footer'
 import Mission from './Mission'
+import AboutCustomers from './AboutCustomers'
 
 
 const About = () => {
@@ -17,7 +18,8 @@ const About = () => {
      <WordsAbout />
      <Mission />
      {/* <Team /> */}
-     <Customers />
+     {/* <Customers /> */}
+     <AboutCustomers />
      <Contact />
      <Footer/>
     </>

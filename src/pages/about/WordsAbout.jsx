@@ -11,7 +11,7 @@ const WordsAbout = () => {
     AOS.init();
   });
   return (
-    <section className="lg:px-40 px-5 my-20  w-full relative">
+    <section className="lg:px-40 px-5 my-40  w-full relative">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 justify-between items-center">
         <div className="space-y-5 max-md:text-center text-gray-950 rounded-lg  py-[40px] px-5">
           <p className="text-4xl font-semibold text-secondaryColors" data-aos="fade-up" data-aos-duration="600">

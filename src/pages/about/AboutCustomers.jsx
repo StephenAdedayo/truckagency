@@ -1,21 +1,23 @@
-import React, { useEffect } from "react";
-import { FaStar } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Tabs from "../../components/Tabs";
+import React from 'react'
+import Tabs from '../../components/Tabs'
 
-const Customers = () => {
-  useEffect(() => {
-    AOS.init();
-  });
+
+const AboutCustomers = () => {
   return (
-    <section className="  ">
-      <div className="container mx-auto">
-        <div className=" grid  items-center ">
+    
+      <section className="my-40 px-5 lg:px-40   ">
+      <div className="container  flex flex-col lg:flex-row items-center  mx-auto">
+
+    <div className='h-[900px] w-full flex-[40%]'>
+
+        <img className='w-full bg-cover  h-full' src="/aboutbgcus.jpg" alt="" />
+    </div>
+
+        <div className="h-[900px]  flex-[60%] ">
 
 
           <div
-            className=" bg-white shadow-xl py-24 xl:px-20 px-4 w-fit md:h-[700px]  "
+            className=" h-full bg-white shadow-xl py-24  xl:px-20 px-4    "
             data-aos="fade-up"
             data-aos-duration="600"
           >
@@ -39,7 +41,8 @@ const Customers = () => {
         </div>
       </div>
     </section>
-  );
-};
+    
+  )
+}
 
-export default Customers;
+export default AboutCustomers

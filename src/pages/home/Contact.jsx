@@ -10,7 +10,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <section className="my-20 w-full lg:px-40 px-4 bg-secondaryColors py-24 text-white -mb-[80px]">
+    <section className="mt-40 w-full lg:px-40 px-4 bg-secondaryColors py-24 text-white ">
       <div className="container mx-auto flex flex-col xl:flex-row gap-10">
         
 
@@ -31,7 +31,7 @@ const Contact = () => {
         
        </form>
        <div>
-       <button className="px-10 py-3 mt-3 w-full text-center bg-black" >Send</button>
+       <button className="px-10 py-3 mt-3 w-full text-center bg-primaryColors" >Send</button>
        </div>
 
 

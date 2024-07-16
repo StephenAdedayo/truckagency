@@ -19,9 +19,10 @@ const Home = () => (
     <WhatWeDo />
     <About />
     <Services />
+    
     <ServicesList />
     <Customermised />
-    <Customers />
+    {/* <Customers /> */}
     {/* <Resource /> */}
     <Testimonials />
     <Contact />

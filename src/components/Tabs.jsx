@@ -8,8 +8,8 @@ const Tabs = () => {
     "Customer-Centric Approach",
   ];
   return (
-    <div>
-      <div className="flex flex-col md:flex-row border-b">
+    <div className="h-[80vh]">
+      <div className="flex flex-col  md:flex-row border-b">
         {tabs.map((tab, index) => (
           <div
             key={index}
@@ -24,7 +24,7 @@ const Tabs = () => {
           </div>
         ))}
       </div>
-      <div className="p-4">
+      <div className="p-4 ">
         {activeTab === 0 && (
           <div>
             <span className="font-bold">Skilled Drivers:</span> Our team of

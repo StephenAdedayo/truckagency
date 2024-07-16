@@ -9,7 +9,7 @@ const ServeList = () => {
     AOS.init();
   });
   return (
-    <div>
+    <div className="py-20 ">
       <div className="w-full md:w-[50%] text-white">
         <div
           className="space-y-3 max-sm:text-center flex-[50%] "
