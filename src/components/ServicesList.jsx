@@ -11,20 +11,20 @@ const ServicesList = () => {
   const [services, setServices] = useState([
     {
       img: <GiMineTruck  className="text-6xl"/>,
-      title: "Gravel, Aggregate",
-      body: "Supply and delivery of all aggregates, Gravel and soils, direct from quarry/supplier to your doorstep.",
+      title: "Haulage & Transportation",
+      body: "At Kratos Trucking, we understand the critical importance of efficient and reliable transportation for your business. Our Haulage & Transportation services are designed to ensure your goods are delivered safely and on time, no matter the distance.",
       button: "read more",
     },
     {
       img: <FaTruckRampBox className="text-6xl"/>,
-      title: "Dirt, Rubble & Snow Removal",
-      body: "Specializing in custom fill, rubble and snow removal from your landscape or construction project.",
+      title: "Freight & Logistics Services",
+      body: "Kratos Trucking offers a full suite of Freight & Logistics services designed to streamline your supply chain and enhance efficiency. From planning and coordination to execution and delivery, we handle every aspect of your logistics needs.",
       button: "read more",
     },
     {
       img: <LiaTruckLoadingSolid className="text-6xl"/>,
-      title: "Bin Rentals",
-      body: "We provide roll off bins for any construction, excavation or landscape project to easily remove soil, rubble or garbage.",
+      title: "Warehousing & Storage",
+      body: "Kratos Trucking offers secure and flexible warehousing and storage solutions to accommodate your business’s needs. Our facilities are equipped with advanced technology and security measures to ensure your inventory is stored safely and efficiently.",
       button: "read more",
     },
     // {img:'/Vector.png', title:'Contractor Yard Supply', body:'We can look after your yard inventory, so your employees are never looking for material for their sites.', button:'read more'},
@@ -51,15 +51,15 @@ const ServicesList = () => {
               <p className="mb-[70px]">{service.img}</p>
               <p className="font-semibold text-2xl">{service.title}</p>
               <p>{service.body}</p>
-              <button className="capitalize px-6 py-3 bg-primaryColors border rounded-lg border-white text-white">
+              <button className="capitalize px-6 py-3 bg-primaryColors border border-white text-white">
                 {service.button}
               </button>
             </div>
           ))}
         </div>
 
-        <div className="text-center my-6">
-          <button className="capitalise bg-primaryColors border-2 text-white px-8 py-4 rounded-lg">
+        <div className="text-center mb-60">
+          <button className="capitalise bg-primaryColors border-2 text-white px-12 py-4">
             {<Link to="/services">View All</Link>}
           </button>
         </div>

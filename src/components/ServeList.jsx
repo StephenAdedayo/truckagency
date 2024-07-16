@@ -10,9 +10,9 @@ const ServeList = () => {
   });
   return (
     <div>
-      <div className="flex flex-col md:flex-row gap-10  text-white">
+      <div className="w-full md:w-[50%] text-white">
         <div
-          className="space-y-7 max-sm:text-center flex-[50%] "
+          className="space-y-3 max-sm:text-center flex-[50%] "
           data-aos="fade-up"
           data-aos-duration="600"
         >

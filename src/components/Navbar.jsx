@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
+  }; 
 
   const [isServiceOpen, setIsServiceOpen] = useState(false);
 
@@ -17,19 +17,19 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full fixed top-0  bg-white h-[100px]  z-10 py-5 lg:px-40 px-5">
+    <nav className="w-full fixed top-0  bg-white h-[100px]  z-10 py-5 lg:px-40 px-5 shadow-lg">
       <div className="w-full flex items-center justify-between ">
         
         <Link to="/">
         <img src="/trucklogo1.png" className="w-[200px] mr-[20px] " alt="" />
         </Link>
 
-        <div className="hidden md:flex space-x-10 text-primaryColors font-semibold items-center">
-          <Link to="/">Home</Link>
-          <Link to="/about-us">About us</Link>
-          <Link to="/contact-us">Contact Us</Link>
+        <div className="hidden md:flex space-x-10 text-black font-semibold items-center">
+          <Link className="hover:text-primaryColors transition-all ease-out duration-300 hover:scale-110" to="/">Home</Link>
+          <Link className="hover:text-primaryColors transition-all ease-out duration-300 hover:scale-110" to="/about-us">About us</Link>
+          <Link className="hover:text-primaryColors transition-all ease-out duration-300 hover:scale-110" to="/contact-us">Contact Us</Link>
 
-          <Link to="/services" onMouseOver={() => serviceMenu()}>
+          <Link className="hover:text-primaryColors transition-all ease-out duration-300 hover:scale-110" to="/services" onMouseOver={() => serviceMenu()}>
             Services
           </Link>
         </div>

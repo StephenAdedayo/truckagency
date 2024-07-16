@@ -9,7 +9,7 @@ const Services = () => {
   });
 
   return (
-    <section className="lg:px-40  px-5 py-10 w-full flex justify-center items-center   bg-primaryColors h-[70vh]">
+    <section className="lg:px-40  px-5 py-10 w-full flex justify-center items-center   bg-primaryColors h-[50vh]">
       <div className="container mx-auto ">
         <ServeList />
       </div>

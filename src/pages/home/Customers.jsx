@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { FaStar } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Tabs from "../../components/Tabs";
 
 const Customers = () => {
   useEffect(() => {
@@ -38,20 +39,17 @@ const Customers = () => {
               <FaStar className="text-primaryColors" />
             </div> */}
             <p
-              className="text-3xl font-bold text-primaryColors "
+              className="text-base  text-black font-semibold"
               data-aos="fade-up"
               data-aos-duration="600"
             >
-              Why Choose Us
+            At Kratos Trucking, we understand that choosing the right transportation partner is crucial for your business's success. Here’s why Kratos Trucking stands out as your preferred choice for haulage, freight, and logistics services:
             </p>
-            <p data-aos="fade-up" data-aos-duration="600" className="leading-7 text-gray-800 ">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptas autem deleniti. Est illo, unde recusandae aliquam possimus soluta praesentium dolores nesciunt voluptate cumque impedit distinctio odio delectus maiores debitis vero fuga voluptatibus suscipit eligendi exercitationem. Ipsam sequi officia suscipit sint deleniti et nisi consequatur explicabo accusamus, itaque ex ipsum enim beatae similique inventore obcaecati maiores minus expedita laborum a quibusdam quia assumenda hic aliquam? Quisquam fugit sit maiores.
-            </p>
-
-            <p className=" leading-7 text-gray-800">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tenetur facilis quia. Culpa hic corrupti cupiditate nihil doloremque ipsum a corporis magnam delectus veritatis. Nostrum totam rem qui error inventore.
-            </p>
-
+ 
+            <div>
+            <Tabs />
+            </div>
+      
             {/* <div className="flex space-x-5 items-center  ">
               <p className="  ">
                 <span
