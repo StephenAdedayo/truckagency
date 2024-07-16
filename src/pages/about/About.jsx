@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../../components/Navbar'
 import Special from './Special'
 import WordsAbout from './WordsAbout'
@@ -10,7 +10,12 @@ import Mission from './Mission'
 import AboutCustomers from './AboutCustomers'
 
 
+
 const About = () => {
+  useEffect(() => {
+
+    window.scroll({top: 0, behavior: "smooth"})
+   },[])
   return (
     <>
      <Navbar />

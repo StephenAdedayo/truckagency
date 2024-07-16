@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import WhatWeDo from './WhatWeDo'
 import Navbar from '../../components/Navbar'
 import About from './About'
@@ -12,7 +12,14 @@ import ServicesList from '../../components/ServicesList'
 import Testimonials from './Testimonials'
 
 
-const Home = () => (
+const Home = () => {
+ useEffect(() => {
+
+  window.scroll({top: 0, behavior: "smooth"})
+ },[])
+
+  return (
+
   <div>
     
     <Navbar />
@@ -29,5 +36,5 @@ const Home = () => (
     <Footer />
   </div>
 )
-
+}
 export default Home

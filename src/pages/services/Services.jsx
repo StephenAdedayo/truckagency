@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import Navbar from '../../components/Navbar'
 import Contact from '../home/Contact'
@@ -10,7 +10,13 @@ import Specials from '../about/Specials'
 
 
 
+
+
 const Services = () => {
+  useEffect(() => {
+
+    window.scroll({top: 0, behavior: "smooth"})
+   },[])
 
   return (
     <>
