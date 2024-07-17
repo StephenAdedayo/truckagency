@@ -10,7 +10,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <section className="mt-40 w-full lg:px-40 px-4 bg-secondaryColors py-24 text-white ">
+    <section className="mt-20 md:mt-40 w-full lg:px-40 px-4 bg-[url('https://res.cloudinary.com/ddpzz4n4i/image/upload/v1721171666/haulage-image_vofuli.png')] bg-cover md:bg-fixed bg-no-repeat py-24 text-white ">
       <div className="container mx-auto flex flex-col xl:flex-row gap-10">
         
 

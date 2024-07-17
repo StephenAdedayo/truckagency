@@ -14,8 +14,8 @@ const WhatWeDo = () => {
       <div className="container mx-auto flex items-center p-10 h-[100vh] justify-center  ">
         <div class="animate__animated animate__fadeInUp animate__delay-0.5">
           <div className="space-y-5 text-white text-center">
-            <h1 className="text-[48px] font-bold">
-              Reliable Trucking  and  LandScape Supplier
+            <h1 className=" text-3xl md:text-8xl font-bold">
+              Road Haulage <br /> & Logistics in Texas
             </h1>
             {/* <p className="lg:text-3xl md:text-2xl text-2xl ">
               Servicing Commercial & Residential Projects

@@ -10,6 +10,7 @@ import Footer from './Footer'
 import Customermised from './Customermised'
 import ServicesList from '../../components/ServicesList'
 import Testimonials from './Testimonials'
+import NewFooter from '../../components/NewFooter'
 
 
 const Home = () => {

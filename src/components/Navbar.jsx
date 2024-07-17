@@ -34,7 +34,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <button onClick={() => handleMenu()} className="md:hidden">
+        <button onClick={() => handleMenu()} className="md:hidden bg-primaryColors text-white p-1">
           {isMenuOpen ? (
             <FaTimes className="text-2xl" />
           ) : (

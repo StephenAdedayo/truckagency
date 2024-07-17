@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -11,9 +13,9 @@ const WordsAbout = () => {
     AOS.init();
   });
   return (
-    <section className="lg:px-40 px-5 my-40  w-full relative">
+    <section className="lg:px-40 px-5 my-20 md:my-40  w-full relative">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 justify-between items-center">
-        <div className="space-y-5 max-md:text-center text-gray-950 rounded-lg  py-[40px] px-5">
+        <div className="space-y-5  text-gray-950 rounded-lg  py-[40px] px-5">
           <p className="text-4xl font-semibold text-secondaryColors" data-aos="fade-up" data-aos-duration="600">
             Our Company
           </p>
@@ -39,13 +41,19 @@ const WordsAbout = () => {
             allowing our customers the added benefit of saving on costly lost
             man hours to facilitate the removal of clean fill.
           </p>
+
+          <Link to="/services">
+          <button className="capitalize px-6 py-3 bg-primaryColors border border-white text-white mt-6">
+          View Services
+              </button>
+              </Link>
         </div>
 
         <div className="grid place-content-center" data-aos="fade-up" data-aos-duration="600">
           <img
-            src="https://images.pexels.com/photos/10352106/pexels-photo-10352106.jpeg?auto=compress&cs=tinysrgb&w=600"
-            className="h-[650px]"
+            src="https://res.cloudinary.com/ddpzz4n4i/image/upload/v1721165030/man-working-as-truck-driver-posing_wfvasi.png"
             alt=""
+            className="w-70%]"
           />
         </div>
       </div>

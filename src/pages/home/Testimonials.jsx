@@ -17,21 +17,28 @@ const Testimonials = () => {
 
   const [testimonials, setTestimonials] = useState([
  {words:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed nesciunt, accusantium pariatur sequi eius amet minus rem officiis unde, aliquam quasi incidunt a necessitatibus? Nesciunt voluptatibus omnis repellendus libero", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfPib7CWEiNiu18DRUk_FDdZR0KNSI4oz_g&s", detail:'From A Satisfied Customer ' },
+
  {words:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed nesciunt, accusantium pariatur sequi eius amet minus rem officiis unde, aliquam quasi incidunt a necessitatibus? Nesciunt voluptatibus omnis repellendus libero", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfPib7CWEiNiu18DRUk_FDdZR0KNSI4oz_g&s", detail:'From A Satisfied Customer ' },
+
  {words:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed nesciunt, accusantium pariatur sequi eius amet minus rem officiis unde, aliquam quasi incidunt a necessitatibus? Nesciunt voluptatibus omnis repellendus libero", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfPib7CWEiNiu18DRUk_FDdZR0KNSI4oz_g&s", detail:'From A Satisfied Customer ' },
+
  {words:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed nesciunt, accusantium pariatur sequi eius amet minus rem officiis unde, aliquam quasi incidunt a necessitatibus? Nesciunt voluptatibus omnis repellendus libero", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfPib7CWEiNiu18DRUk_FDdZR0KNSI4oz_g&s", detail:'From A Satisfied Customer ' },
+
  {words:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed nesciunt, accusantium pariatur sequi eius amet minus rem officiis unde, aliquam quasi incidunt a necessitatibus? Nesciunt voluptatibus omnis repellendus libero", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfPib7CWEiNiu18DRUk_FDdZR0KNSI4oz_g&s", detail:'From A Satisfied Customer ' },
+
  {words:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed nesciunt, accusantium pariatur sequi eius amet minus rem officiis unde, aliquam quasi incidunt a necessitatibus? Nesciunt voluptatibus omnis repellendus libero", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfPib7CWEiNiu18DRUk_FDdZR0KNSI4oz_g&s", detail:'From A Satisfied Customer ' },
+
  {words:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed nesciunt, accusantium pariatur sequi eius amet minus rem officiis unde, aliquam quasi incidunt a necessitatibus? Nesciunt voluptatibus omnis repellendus libero", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfPib7CWEiNiu18DRUk_FDdZR0KNSI4oz_g&s", detail:'From A Satisfied Customer ' },
+ 
  {words:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed nesciunt, accusantium pariatur sequi eius amet minus rem officiis unde, aliquam quasi incidunt a necessitatibus? Nesciunt voluptatibus omnis repellendus libero", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJfPib7CWEiNiu18DRUk_FDdZR0KNSI4oz_g&s", detail:'From A Satisfied Customer ' },
   ])
 
   return (
- <section className='w-full px-5 lg:px-40 my-20'>
+ <section className='w-full px-5 lg:px-40 mt-20 md:mt-40'>
     <div className='mx-auto container '>
-      <div className='text-center space-y-5'>
-        <p className='text-xl'>What Our Clients Say</p>
-        <p className='text-4xl'>Happy Customers and Clients</p>
+      <div className='text-center space-y-2'>
+        <p className='text-lg md:text-xl'>What Our Clients Say</p>
+        <p className='text-3xl md:text-4xl font-bold'>Happy Customers and Clients</p>
       </div>
 
 

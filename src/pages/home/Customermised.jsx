@@ -9,7 +9,7 @@ const Customermised = () => {
     AOS.init();
   });
   return (
-    <div className='px-5 lg:px-40 my-20 w-full py-60  bg-fixed  bg-cover grid place-items-center bg-[url("https://res.cloudinary.com/ddpzz4n4i/image/upload/v1721085734/sectBG_uh8mnu.jpg")]'>
+    <div className='px-5 lg:px-40 my-20 w-full py-32 md:p-40 bg-blend-darken md:bg-fixed  bg-cover grid place-items-center bg-[url("https://res.cloudinary.com/ddpzz4n4i/image/upload/v1721085734/sectBG_uh8mnu.jpg")]'>
       
     {/* <p
         className="text-[] font-bold text-white"

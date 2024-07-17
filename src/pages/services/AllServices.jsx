@@ -25,24 +25,24 @@ const AllServices = () => {
       body: "Kratos Trucking offers secure and flexible warehousing and storage solutions to accommodate your business’s needs. Our facilities are equipped with advanced technology and security measures to ensure your inventory is stored safely and efficiently.",
       button: "read more",
     },
-    {
-      img:<GiTruck className="text-6xl"/> ,
-      title: "Contractor Yard Supply",
-      body: "We can look after your yard inventory, so your employees are never looking for material for their sites.",
-      button: "read more",
-    },
-    {
-      img: <GiRoundStruck className="text-6xl"/>,
-      title: "Screener",
-      body: "With our advanced soil screener, we can efficiently recycle the topsoil we pick up to be reused by our customers.",
-      button: "read more",
-    },
-    {
-      img: <FaTruckMonster className="text-6xl" />,
-      title: "Excavating Partner",
-      body: "Our partnership with Total Excavation Inc makes us your most reliable source for all things dirt.",
-      button: "read more",
-    },
+    // {
+    //   img:<GiTruck className="text-6xl"/> ,
+    //   title: "Contractor Yard Supply",
+    //   body: "We can look after your yard inventory, so your employees are never looking for material for their sites.",
+    //   button: "read more",
+    // },
+    // {
+    //   img: <GiRoundStruck className="text-6xl"/>,
+    //   title: "Screener",
+    //   body: "With our advanced soil screener, we can efficiently recycle the topsoil we pick up to be reused by our customers.",
+    //   button: "read more",
+    // },
+    // {
+    //   img: <FaTruckMonster className="text-6xl" />,
+    //   title: "Excavating Partner",
+    //   body: "Our partnership with Total Excavation Inc makes us your most reliable source for all things dirt.",
+    //   button: "read more",
+    // },
   ]);
   return (
     <div className="w-full">

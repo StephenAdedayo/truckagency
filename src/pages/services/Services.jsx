@@ -7,6 +7,7 @@ import AboutServe from './AboutServe'
 import AllServices from './AllServices'
 
 import Specials from '../about/Specials'
+import ServicesDetail from './ServicesDetail'
 
 
 
@@ -23,10 +24,8 @@ const Services = () => {
     <Navbar />
     
     <Specials title="Services"/>
-    <AboutServe />
     
-  
-    <AllServices />
+  <ServicesDetail />
     <Contact />
     <Footer />
     </>

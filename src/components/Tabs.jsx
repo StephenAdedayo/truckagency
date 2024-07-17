@@ -6,10 +6,11 @@ const Tabs = () => {
     "Experienced and Professional Team",
     "Comprehensive Services",
     "Customer-Centric Approach",
+    "Proven Track Record",
   ];
   return (
-    <div className="h-[80vh]">
-      <div className="flex flex-col  md:flex-row border-b">
+    <div>
+      <div className="flex flex-col  md:flex-row justify-between border-b">
         {tabs.map((tab, index) => (
           <div
             key={index}
@@ -41,31 +42,51 @@ const Tabs = () => {
             <span className="font-bold">Safety Protocols:</span> Our We
             prioritize the safety of your goods with rigorous safety protocols
             and adherence to all regulatory standards.
-            <br />
-            <br />
-            <span className="font-bold">Training Programs:</span> Our Continuous
-            training ensures our team is up-to-date with the latest safety
-            practices and industry regulations.
+      
           </div>
         )}
         {activeTab === 1 && (
           <div>
-            <span className="font-bold">Haulage & Transportation:</span> Reliable and efficient transportation services for all types of cargo, ensuring timely and secure delivery.
+            <span className="font-bold">Haulage & Transportation:</span>{" "}
+            Reliable and efficient transportation services for all types of
+            cargo, ensuring timely and secure delivery.
             <br />
             <br />
-            <span className="font-bold">Freight & Logistics:</span>Comprehensive logistics solutions, including freight forwarding, customs brokerage, and inventory management.
+            <span className="font-bold">Freight & Logistics:</span>Comprehensive
+            logistics solutions, including freight forwarding, customs
+            brokerage, and inventory management.
             <br />
             <br />
-            <span className="font-bold">Warehousing & Storage:</span>Secure and flexible warehousing options with advanced inventory management and value-added services.
+            <span className="font-bold">Warehousing & Storage:</span>Secure and
+            flexible warehousing options with advanced inventory management and
+            value-added services.
           </div>
         )}
-        {activeTab === 2 && <div>
-            <span className="font-bold">Tailored Solutions:</span>{" "} We provide customized transportation solutions that meet the unique needs of each client, from one-time shipments to ongoing logistics support.
+        {activeTab === 2 && (
+          <div>
+            <span className="font-bold">Tailored Solutions:</span> We provide
+            customized transportation solutions that meet the unique needs of
+            each client, from one-time shipments to ongoing logistics support.
             <br />
             <br />
-            <span className="font-bold">Responsive Service:</span>{" "} COur customer service team is available to assist you with any inquiries or concerns, ensuring a smooth and hassle-free experience.
-
-            </div>}
+            <span className="font-bold">Responsive Service:</span> COur customer
+            service team is available to assist you with any inquiries or
+            concerns, ensuring a smooth and hassle-free experience.
+          </div>
+        )}
+        {activeTab === 3 && (
+          <div>
+            <span className="font-bold">Client Testimonials:</span> Our clients
+            trust us for our reliability, professionalism, and exceptional
+            service. Read their testimonials to see why they choose Kratos
+            Trucking.
+            <br />
+            <br />
+            <span className="font-bold">Industry Experience: </span> With years
+            of experience in the transportation industry, we have a proven track
+            record of delivering successful transportation solutions.
+          </div>
+        )}
       </div>
     </div>
   );

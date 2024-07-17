@@ -22,7 +22,7 @@ const AboutCustomers = () => {
             data-aos-duration="600"
           >
             
-    <h1 className="text-[48px] font-bold mb-[10px]">Why Choose Us</h1>
+    <h1 className=" text-3xl md:text-[48px] font-bold mb-[10px]">Why Choose Us</h1>
 
             <p
               className="text-base mb-[60px]  text-black font-semibold"

@@ -22,14 +22,7 @@ const ServeList = () => {
             Supply and delivery of all aggregates, Gravel and soils, direct from
             quarry/supplier to your doorstep.
           </p>
-          <div>
-            {/* <Link
-              to="/"
-              className="py-4 px-8 bg-primaryColors border-2 border-white rounded-lg  text-white"
-            >
-              Get An Estimate <FaArrowRight className="inline-flex " />
-            </Link> */}
-          </div>
+        
         </div>
 
         <div className="max-sm:text-center  flex-[50%]">
